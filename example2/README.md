@@ -8,7 +8,7 @@ When you study this example, please pay attention to the followings:
 4. How to insert documents containing Base64 data.
 
 ## Getting Started
-Change the value of variable `mongourl` to your mlab database.
+Change the value of variable `mongourl`.
 ### Installing
 ```
 npm install
