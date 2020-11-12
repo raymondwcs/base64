@@ -10,7 +10,7 @@ When you study this example, please pay attention to the followings:
 6. [`ObjectId`](https://docs.mongodb.com/manual/reference/method/ObjectId/) is used as primary key (as **find** criteria).
 
 ## Getting Started
-Change the value of variable `mongourl` to your Cloud MongoDB.
+Change the value of variable `mongourl`.
 ### Installing
 ```
 npm install
