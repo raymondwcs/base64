@@ -1,4 +1,4 @@
-# Use Base64 to store photo
+# Use Base64 to store photo (as text)
 This example demonstrates the followings:
 1.  Handle `POST` requests using the [`formidable`](https://www.npmjs.com/package/formidable) npm package.  Learn how to create a HTML form for file upload and extract `POST` request data.
 1.  Convert binary data (such as photos) to Base64
