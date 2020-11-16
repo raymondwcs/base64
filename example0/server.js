@@ -4,7 +4,7 @@ const http = require('http');
 const url = require('url');
 const assert = require('assert');
 
-var doc = {};
+var doc = {};  // document contains a title, photo (base64) and the photo's mimetype
 
 const server = http.createServer((req,res) => {
     var parsedURL = url.parse(req.url, true);
@@ -18,6 +18,7 @@ const server = http.createServer((req,res) => {
             res.write('<input type="file" name="filetoupload"><br>');
             res.write(`<input type="submit" value="upload">`);
             res.end('</form></body></html>');
+            break;
         case '/upload':
             const form = new formidable.IncomingForm();
             form.parse(req, (err, fields, files) => {
