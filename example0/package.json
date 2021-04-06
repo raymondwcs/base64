@@ -1,10 +1,9 @@
 {
     "name": "server",
-    "description": "example",
-    "author": "Raymond SO <rso@ouhk.edu.hk>",
+    "description": "Base 64 example",
+    "author": "Raymond SO <raymond.wc.so@gmail.com>",
     "version": "0.0.1",
     "dependencies": {
-        "mongodb": "3.1",
         "formidable": "latest"
     },
     "engine": "node >= 12.10.0",
