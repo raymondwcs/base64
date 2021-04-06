@@ -3,8 +3,8 @@
 	"description": "COMPS381F - Base64 Example",
 	"version": "1.0.0",
 	"dependencies": {
-		"mongodb": "3.1",
-		"formidable": "latest"
+		"formidable": "latest",
+		"mongodb": "3.6.5"
 	},
 	"scripts": {
 		"start": "node server.js"
