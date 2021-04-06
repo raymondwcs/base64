@@ -30,14 +30,8 @@ const server = http.createServer((req, res) => {
         res.end("No file uploaded!");
       }
       const filename = files.filetoupload.path;
-      let title = "untitled";
-      let mimetype = "images/jpeg";
-      if (fields.title && fields.title.length > 0) {
-        title = fields.title;
-      }
-      if (files.filetoupload.type) {
-        mimetype = files.filetoupload.type;
-      }
+      const title = (fields.title && fields.title.length > 0) ? fields.title : "untitled";
+      const mimetype = (files.filetoupload.type) ? files.filetoupload.type : "images/jpeg";
       fs.readFile(files.filetoupload.path, (err, data) => {
         client.connect(err => {
           if (err) {
